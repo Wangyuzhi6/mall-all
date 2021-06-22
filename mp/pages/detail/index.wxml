@@ -1,0 +1,2 @@
+<button bindtap="go2back">返回上一页</button>
+
