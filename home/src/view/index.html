@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <%= require('html-loader!./common/meta.html') %>
+    <title><%= htmlWebpackPlugin.options.title %></title>
+</head>
+<body>
+    <%= require('html-loader!./common/nav.html') %>
+    <%= require('html-loader!./common/search.html') %>
+    
+    <div class="focus">
+        <div class="container clearfix">
+            <div class="categories col-1 col-gap">
+                <div class="parent-categories"></div>
+                <div class="child-categories"></div>
+            </div>
+            <div class="swiper-container col-4">
+                <div class="swiper-wrapper">
+                </div>
+                <!-- 如果需要分页器 -->
+                <div class="swiper-pagination"></div>
+                <!-- 如果需要导航按钮 -->
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+            </div>
+        </div>
+    </div>
+    <div class="hot">
+        <div class="container clearfix">
+            <div class="hot-hd col-1 col-gap">
+                <h2 class="hot-hd-text">热销推荐</h2>
+                <i class="fa fa-shopping-cart"></i>
+            </div>
+            <div class="hot-bd col-4">
+
+            </div>
+        </div>
+    </div>
+    <div class="floor">
+        <div class="container">
+            <div class="floor-wrap">
+            </div>
+        </div>
+    </div>
+    <div id="elevator" class="elevator container">
+
+    </div>
+
+    <%= require('html-loader!./common/footer.html') %>
+
+</body>
+</html>
